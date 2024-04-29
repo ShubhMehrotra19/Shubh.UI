@@ -11,7 +11,7 @@ function Footer(props: Props) {
     return (
         <section className="max-w-7xl mx-auto text-gray-700 bg-white body-font border-t-2 border-slate-200">
     <div className="container flex flex-col items-center px-8 py-8 mx-auto max-w-7xl sm:flex-row">
-       <Link href='https://shubh-ui.vercel.app/'><Image className='cursor-pointer active:scale-95 transition-all duration-300 ease-in-out' src={logo} alt='logo' width={100} height={40} /></Link>
+       <Link href='/'><Image className='cursor-pointer active:scale-95 transition-all duration-300 ease-in-out' src={logo} alt='logo' width={100} height={40} /></Link>
         <p className="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0">&copy; all rights reserved @ <Link href='https://shubh-portfolio-delta.vercel.app/'><span className='cursor-pointer text-slate-700 font-semibold'>Shubh Mehrotra</span></Link>
         </p>
         <span className="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start">
