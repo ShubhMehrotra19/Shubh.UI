@@ -1,5 +1,5 @@
 "use client"
-import LandingPage from '@/components/LandingPage/LandingPage'
+import LandingPage from '@/components/LandingPageComponents/LandingPage/LandingPage'
 import React from 'react'
 
 interface Props {}
