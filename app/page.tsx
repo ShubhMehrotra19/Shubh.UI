@@ -1,36 +1,32 @@
 "use client";
-import WelcomePage from '@/components/welcome/page';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import gsap from 'gsap';
+import WelcomePage from '@/components/welcome/page';
+import Navbar from '@/components/navbar/Navbar';
 
 interface Props {}
 
 function Page(props: Props) {
-  const {} = props;
-  const welcomeRef = useRef<HTMLDivElement>(null);
+  const [isWelcomeAnimationComplete, setIsWelcomeAnimationComplete] = useState(false);
 
   useEffect(() => {
-    const welcomePage = welcomeRef.current;
-    if (welcomePage) {
-      gsap.from(welcomePage, {
-        y: 0,
-        duration: 1.5,
-      });
-      gsap.to(welcomePage, {
-        y: -2000,
-        duration: 2,
-        delay: 1.5,
-        ease: 'power4.in',
-      });
-    }
+    const welcomeAnimation = gsap.timeline();
+    welcomeAnimation.fromTo("#welcome", { y: 0 }, { y: -2000, duration: 1.5, delay: 3, ease: "power4.in" })
+                     .set("#welcome", { display: "none" })
+                     .set("#content", { opacity: 0, display: "block" })
+                     .to("#content", { opacity: 1, duration: 1.5, onComplete: () => setIsWelcomeAnimationComplete(true) });
   }, []);
 
   return (
-    <>
-    <div ref={welcomeRef}>
-      <WelcomePage />
+    <div>
+      <div id="welcome" style={{ display: isWelcomeAnimationComplete ? "none" : "block" }}>
+        <WelcomePage />
+      </div>
+      <div id="content" style={{ opacity: isWelcomeAnimationComplete ? 1 : 0, display: isWelcomeAnimationComplete ? "block" : "none" }}>
+        <Navbar />
+        {/* Add other components here */}
+      </div>
     </div>
-    </>
   );
 }
 
