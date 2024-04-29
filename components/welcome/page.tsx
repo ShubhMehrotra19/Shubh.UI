@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 interface Props {}
 
-function Page(props: Props) {
+function Welcome(props: Props) {
     const {} = props;
     const [displayedWord, setDisplayedWord] = useState<string | null>(null);
     const words = ['We', 'make', 'React', 'Components', 'easy', 'for', 'you', '🚀'];
@@ -29,5 +29,5 @@ function Page(props: Props) {
     );
 }
 
-export default Page;
+export default Welcome;
 
