@@ -3,11 +3,11 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
 import Navbar from "@/components/navbar/Navbar";
-import Hero from "@/components/heroSection/Hero";
-import About from "@/components/about/About";
-import Footer from "@/components/footer/Footer";
-import Creator from "@/components/Creator/Creator";
-import Welcome from "@/components/welcome/page";
+import Hero from "@/components/LandingPageComponents/heroSection/Hero";
+import About from "@/components/LandingPageComponents/about/About";
+import Footer from "@/components/LandingPageComponents/footer/Footer";
+import Creator from "@/components/LandingPageComponents/Creator/Creator";
+import Welcome from "@/components/LandingPageComponents/welcome/page";
 
 interface Props {}
 
