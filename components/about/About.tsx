@@ -9,7 +9,7 @@ function About(props: Props) {
     const {} = props
 
     return (
-        <section className="py-20 mb-5">
+        <section className="py-20 mb-32">
   <div className="container items-center max-w-7xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
     <div className="flex flex-wrap items-end -mx-3">
       <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">

@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Hero from '@/components/heroSection/Hero';
 import About from '@/components/about/About';
 import Footer from '@/components/footer/Footer';
+import Creator from '@/components/Creator/Creator';
 
 interface Props {}
 
@@ -22,6 +23,8 @@ lenis.on('scroll', ScrollTrigger.update)
 gsap.ticker.add((time)=>{
   lenis.raf(time * 800)
 })
+
+
 
 gsap.ticker.lagSmoothing(0)
 
@@ -46,6 +49,7 @@ function Page(props: Props) {
         {/* Add other components here */}
         <Hero />
         <About />
+        <Creator />
         <Footer />
       </div>
     </div>
