@@ -7,7 +7,7 @@ interface Props {}
 function Page(props: Props) {
     const {} = props;
     const [displayedWord, setDisplayedWord] = useState<string | null>(null);
-    const words = ['Welcome', 'to', 'Shubh.UI', '🚀'];
+    const words = ['We', 'make', 'React', 'Components', 'easy', 'for', 'you', '🚀'];
 
     useEffect(() => {
         let currentIndex = 0;
@@ -17,7 +17,7 @@ function Page(props: Props) {
             if (currentIndex === words.length) {
                 clearInterval(intervalId); 
             }
-        }, 500);
+        }, 400);
 
         return () => clearInterval(intervalId);
     }, []);
