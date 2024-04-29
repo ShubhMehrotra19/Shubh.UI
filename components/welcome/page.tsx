@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 interface Props {}
 
-function Page(props: Props) {
+function Welcome(props: Props) {
     const {} = props;
     const [displayedWord, setDisplayedWord] = useState<string | null>(null);
     const words = ['We', 'make', 'React', 'Components', 'easy', 'for', 'you', '🚀'];
@@ -17,17 +17,17 @@ function Page(props: Props) {
             if (currentIndex === words.length) {
                 clearInterval(intervalId); 
             }
-        }, 400);
+        }, 350);
 
         return () => clearInterval(intervalId);
     }, []);
 
     return (
-        <div className='h-screen w-screen bg-black text-xl font-semibold text-white flex justify-center items-center'>
+        <div className='h-screen w-screen bg-black text-4xl font-semibold text-white flex justify-center items-center'>
             {displayedWord}
         </div>
     );
 }
 
-export default Page;
+export default Welcome;
 
