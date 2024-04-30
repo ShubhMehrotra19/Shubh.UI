@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 interface Props {}
@@ -12,7 +13,7 @@ function Hero(props: Props) {
             <h1 className="text-3xl font-bold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:text-4xl md:text-7xl lg:text-8xl">Start Crafting Your <br className="hidden sm:block" /> Next Great Idea</h1>
             <div className="mx-auto mt-5 text-gray-400 md:mt-8 md:max-w-lg md:text-center md:text-xl">Simplifying the creation of landing pages, blog pages, application pages and so much more with (<span className='font-bold text-slate-600'>Tailwind CSS</span>) based components!</div>
         </div>
-        <button className='font-semibold w-fit text-base rounded-full cursor-pointer border-2 hover:scale-[102%] px-8 py-3 hover:bg-white hover:border-slate-800 hover:text-slate-800 bg-slate-800 text-white active:scale-95 transition-all duration-200 ease-in-out'>Visit Components</button>
+        <Link href='/componentsPage'><button className='font-semibold w-fit text-base rounded-full cursor-pointer border-2 hover:scale-[102%] px-8 py-3 hover:bg-white hover:border-slate-800 hover:text-slate-800 bg-slate-800 text-white active:scale-95 transition-all duration-200 ease-in-out'>Visit Components</button></Link>
     </div>
 </section>
     )

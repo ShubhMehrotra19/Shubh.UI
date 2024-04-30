@@ -14,20 +14,20 @@ function Content(props: Props) {
           Getting Started
         </h2>
         <p className="mx-auto md:mx-0 max-w-5xl text-left text-slate-400 md:text-xl text-sm leading-relaxed mb-5">
-          <span className="font-medium text-green-800 ">Shubh.UI</span> offers developers a seamless starting point for crafting
+          We offer developers a seamless starting point for crafting
           stunning interfaces with ease. Designed to streamline the development
-          process, <span className="font-medium text-green-800 ">Shubh.UI</span> provides a rich selection of customizable
+          process, We provide a rich selection of customizable
           components, allowing developers to effortlessly build responsive and
-          visually appealing websites. With its intuitive design and
-          straightforward integration, getting started with <span className="font-medium text-green-800 ">Shubh.UI</span> is a
+          visually appealing websites. With our intuitive design and
+          straightforward integration, getting started with our component library is a
           breeze. Whether you're a seasoned developer or just starting out,
-          <span className="font-medium text-green-800 ">Shubh.UI</span>'s comprehensive documentation and code examples make it easy
+          our comprehensive documentation and code examples make it easy
           to dive in and start building right away. Plus, with <span className="text-blue-600 font-bold py-1 px-1 bg-blue-500/30 rounded-md">no npm packages</span> or 
           dependencies to worry about, developers can enjoy the flexibility
           to tailor components to suit their project's unique requirements. From
-          buttons and forms to navigation bars and cards, <span className="font-medium text-green-800 ">Shubh.UI</span> empowers
+          buttons and forms to navigation bars and cards, We empower
           developers to bring their ideas to life with confidence and
-          efficiency. So why wait? Jumpstart your next project with <span className="font-medium text-green-800 ">Shubh.UI</span> and
+          efficiency. So why wait? Jumpstart your next project with us and
           unlock a world of possibilities for creating <span className="text-blue-600 font-bold py-1 px-1 bg-blue-500/30 rounded-md">beautiful interfaces</span> that
           stand out from the crowd.
         </p>
