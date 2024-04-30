@@ -5,6 +5,7 @@ import Lenis from "@studio-freight/lenis";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import Content from './components/Content';
+import Footer from '@/components/LandingPageComponents/footer/Footer';
 
 interface Props {}
 
@@ -23,10 +24,11 @@ useEffect(() => {
 },[])
 
     return (
-        <>
+        <div className='mx-auto max-w-7xl'>
         <Navbar />
         <Content />
-        </>
+        <Footer />
+        </div>
     )
 }
 
