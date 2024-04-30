@@ -13,8 +13,8 @@ function Creator(props: Props) {
                 I have made this with a lot of <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 font-semibold'>patience and love</span>. I hope you find it useful and easy to use. If you have any <span className='font-semibold text-blue-600'>suggestions or feedback</span>, feel free to reach out to me on my socials. I would love to hear from you 💖!
             </div>
             <div className='flex justify-center items-center gap-4'>
-                <input type="email" placeholder='   Enter your email' className=' border-2 border-slate-300 rounded-full py-2 pl-3 pr-12' />
-                <button className='rounded-full w-fit px-5 py-2 bg-black text-white font-medium hover:scale-[102%] active:scale-95 transition duration-300 ease-in-out' type="submit">Submit</button>
+                <input type="email" placeholder='   Enter your email' className=' border-2 border-slate-300 rounded-full py-2 md:pl-3 pl-1 md:pr-12 pr-5' />
+                <button className='rounded-full w-fit md:text-base text-sm md:px-5 px-3 py-2 bg-black text-white font-medium hover:scale-[102%] active:scale-95 transition duration-300 ease-in-out' type="submit">Submit</button>
             </div>
         </div>
     )
