@@ -21,7 +21,6 @@ function Navbar1() {
         }
     ];
 
-    // for a better UI, use "max-w-7xl mx-auto" instead of w-full
     return (
         <nav className='w-full flex justify-between items-center'>
             <div className='flex justify-center items-center gap-3'>
@@ -33,8 +32,8 @@ function Navbar1() {
                 </div>
             </div>
             <div className='flex justify-center items-center gap-3'>
-                <button className='w-fit px-4 py-1 border-2 border-black rounded-md text-black hover:bg-black hover:text-white hover:scale-[102%] active:scale-95 cursor-pointer'>Log in</button>
-                <button className='w-fit px-4 py-1 border-2 border-black rounded-md bg-black text-white hover:text-black hover:bg-white hover:scale-[102%] active:scale-95 cursor-pointer'>Register</button>
+                <button className='w-fit px-4 py-1 border-2 border-black rounded-md text-black hover:bg-black hover:text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out'>Log in</button>
+                <button className='w-fit px-4 py-1 border-2 border-black rounded-md bg-black text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out'>Register</button>
             </div>
         </nav>
     );
