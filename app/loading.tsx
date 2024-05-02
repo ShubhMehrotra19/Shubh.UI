@@ -1,19 +1,23 @@
-"use client"
-import React, { useState } from 'react'
-import LoadingBar from 'react-top-loading-bar'
-
+"use client";
+import React from "react";
+import { ThreeCircles } from "react-loader-spinner";
 interface Props {}
 
 function Loading(props: Props) {
-    const {} = props
-    const [progress, setProgress] = useState(0)
-    return (
-      <LoadingBar
-        color='#15803D'
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
+  const {} = props;
+  return (
+    <div className="h-screen flex justify-center items-center z-50">
+      <ThreeCircles
+        visible={true}
+        height={65}
+        width={65}
+        color="#212121"
+        ariaLabel="three-circles-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
       />
-    )
+    </div>
+  );
 }
 
-export default Loading
+export default Loading;

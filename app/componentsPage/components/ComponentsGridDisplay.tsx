@@ -15,27 +15,27 @@ function ComponentsGridDisplay(props: Props) {
     {
       imageLink:
         'https://images.pexels.com/photos/17815054/pexels-photo-17815054/free-photo-of-scenic-view-of-the-three-peaks-of-lavaredo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      componentName: "Navbar",
+      componentName: "Footer",
     },
     {
       imageLink:
         'https://images.pexels.com/photos/17815054/pexels-photo-17815054/free-photo-of-scenic-view-of-the-three-peaks-of-lavaredo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      componentName: "Navbar",
+      componentName: "Cards",
     },
     {
       imageLink:
         'https://images.pexels.com/photos/17815054/pexels-photo-17815054/free-photo-of-scenic-view-of-the-three-peaks-of-lavaredo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      componentName: "Navbar",
+      componentName: "Signin",
     },
     {
       imageLink:
         'https://images.pexels.com/photos/17815054/pexels-photo-17815054/free-photo-of-scenic-view-of-the-three-peaks-of-lavaredo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      componentName: "Navbar",
+      componentName: "Signup",
     },
     {
       imageLink:
         'https://images.pexels.com/photos/17815054/pexels-photo-17815054/free-photo-of-scenic-view-of-the-three-peaks-of-lavaredo.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      componentName: "Navbar",
+      componentName: "Input",
     }
   ];
 
