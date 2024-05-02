@@ -21,8 +21,9 @@ function Navbar1() {
         }
     ];
 
+    // for a better UI, use "max-w-7xl mx-auto" instead of w-full
     return (
-        <nav className='max-w-7xl mx-auto flex justify-center items-center'>
+        <nav className='w-full flex justify-between items-center'>
             <div className='flex justify-center items-center gap-3'>
                 <h2 className='font-bold text-black cursor-pointer'>Logo</h2>
                 <div className='flex justify-center items-center gap-3'>
