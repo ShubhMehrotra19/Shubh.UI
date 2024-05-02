@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import gs from '@/public/images/gettingStarted.png'
+import Link from 'next/link'
 
 interface Props {}
 
@@ -45,7 +46,7 @@ function Content(props: Props) {
             Shubh.UI is designed to be <span className='text-blue-600 font-semibold'>beginner-friendly</span>, with a <span className='text-blue-600 font-semibold'>simple and intuitive UI</span> that makes it easy to create stunning interfaces without any prior experience.
         </p>
         <div className=' max-w-7xl flex justify-start items-start'>
-            <button type="button" className='px-8 py-2 rounded-md bg-black text-white hover:scale-[102%] active:scale-95 transition-all duration-300 ease-in-out cursor-pointer'>Explore!</button>
+            <Link href='/componentsPage'><button type="button" className='px-8 py-2 rounded-md bg-black text-white hover:scale-[102%] active:scale-95 transition-all duration-300 ease-in-out cursor-pointer'>Explore!</button></Link>
         </div>
         </div>
       </div>
