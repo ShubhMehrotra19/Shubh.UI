@@ -59,7 +59,7 @@ const PreviewComponentLayout = ({ componentProp }: { componentProp: JSX.Element 
 );
 
 const ViewCode = ({ componentCode }: { componentCode: JSX.Element }) => (
-  <div className="w-full p-3 flex items-start justify-start bg-black rounded-md text-slate-100">
+  <div className="w-full p-3 flex items-start justify-start bg-black rounded-md text-slate-100 h-[600px] overflow-scroll" style={{scrollbarWidth: 'none'}}>
     {componentCode}
   </div>
 );
@@ -71,31 +71,51 @@ const ComponentCode = () => <div>Code Component</div>;
 function Page({ params }: { params: { component: string } }) {
   const componentArray = [
     {
-      key: "navbar",
-      componentProp: <Navbar1 />,
-      ComponentCode: <Navbar1_text />,
+      key: "Navbar",
+      components: [
+        {
+          key: "Navbar1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        {
+          key: "Navbar1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        {
+          key: "Navbar1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        // Add other Navbar components as needed
+      ],
     },
     {
-      key: "navbar",
-      componentProp: <Navbar1 />,
-      ComponentCode: <Navbar1_text />,
-    },
-    {
-      key: "navbar",
-      componentProp: <Navbar1 />,
-      ComponentCode: <Navbar1_text />,
-    },
-    {
-      key: "navbar",
-      componentProp: <Navbar1 />,
-      ComponentCode: <Navbar1_text />,
-    },
-    {
-      key: "navbar",
-      componentProp: <Navbar1 />,
-      ComponentCode: <Navbar1_text />,
+      key: "Footer",
+      components: [
+        {
+          key: "Footer1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        {
+          key: "Navbar1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        {
+          key: "Navbar1",
+          componentProp: <Navbar1 />,
+          ComponentCode: <Navbar1_text />,
+        },
+        // Add other Footer components as needed
+      ],
     },
   ];
+
+  // Filter componentArray based on params.component
+  const filteredComponents = componentArray.filter(item => item.key === params.component);
 
   return (
     <>
@@ -108,13 +128,20 @@ function Page({ params }: { params: { component: string } }) {
           Welcome to the {params.component} component page! This is where you
           can find all the information you need to get started with this
           component. Just,{" "}
-          <span className="text-blue-600 font-bold">
-            Copy-Paste
-          </span>{" "}
-          your chosen component code in your project!
+          <span className="text-blue-600 font-bold">Copy-Paste</span> your
+          chosen component code in your project!
         </p>
-        {componentArray.map(({ key, componentProp, ComponentCode }) => (
-          <ComponentLayout key={key} componentHeading={key} componentProp={componentProp} ComponentCode={ComponentCode} />
+        {filteredComponents.map(({ components }) => (
+          <div key={params.component}>
+            {components.map(({ key: componentKey, componentProp, ComponentCode }) => (
+              <ComponentLayout
+                key={componentKey}
+                componentHeading={componentKey}
+                componentProp={componentProp}
+                ComponentCode={ComponentCode}
+              />
+            ))}
+          </div>
         ))}
       </section>
       <Footer />
@@ -123,3 +150,5 @@ function Page({ params }: { params: { component: string } }) {
 }
 
 export default Page;
+
+

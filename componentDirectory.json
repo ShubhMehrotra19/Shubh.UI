@@ -1,0 +1,23 @@
+[
+    {
+      "key": "Navbar",
+      "components": [
+        {
+          "key": "Navbar1",
+          "componentProp": "<Navbar1 />",
+          "ComponentCode": "<Navbar1_text />"
+        }
+      ]
+    },
+    {
+      "key": "Footer",
+      "components": [
+        {
+          "key": "Footer1",
+          "componentProp": "<Footer1 />",
+          "ComponentCode": "<Footer1_text />"
+        }
+      ]
+    }
+  ]
+  
