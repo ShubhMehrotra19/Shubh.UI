@@ -1,6 +1,8 @@
 import React from "react";
 import ComponentGridCard from "./ComponentGridCard";
 import NavbarImg from '@/public/components/Navbar.png';
+import FooterImg from '@/public/components/Footer.png';
+import CardImg from '@/public/components/Card.png';
 
 interface Props {}
 
@@ -13,11 +15,11 @@ function ComponentsGridDisplay(props: Props) {
       componentName: "Navbar",
     },
     {
-      imageLink: NavbarImg,
+      imageLink: FooterImg,
       componentName: "Footer",
     },
     {
-      imageLink: NavbarImg,
+      imageLink: CardImg,
       componentName: "Cards",
     },
     {
