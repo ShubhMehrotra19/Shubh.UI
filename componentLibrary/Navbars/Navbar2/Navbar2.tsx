@@ -35,10 +35,10 @@ function Navbar2() {
           ))}
         </div>
       <div className="flex justify-center items-center gap-3">
-        <button className="w-fit px-4 py-2 text-sm rounded-md text-blue-600 hover:bg-blue-600 hover:text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        <button className="w-fit px-4 py-2 text-sm rounded-md text-black hover:bg-black hover:text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
           Log in
         </button>
-        <button className="w-fit px-4 py-2 text-sm border-2 border-blue-600 rounded-md bg-blue-600 text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        <button className="w-fit px-4 py-2 text-sm border-2 border-black rounded-md bg-black text-white hover:scale-[102%] active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
           Sign Up Free
         </button>
       </div>
