@@ -3,9 +3,6 @@ import Link from "next/link";
 import React from "react";
 
 function ComponentGridCard({ componentName, imageLink }: any) {
-  function openComponent() {
-    console.log("Component Opened");
-  }
 
   return (
     <>
@@ -27,7 +24,6 @@ function ComponentGridCard({ componentName, imageLink }: any) {
             {" "}
             <button
               type="submit"
-              onClick={openComponent}
               className="text-white rounded-md w-full py-2 bg-slate-900 hover:cursor-pointer hover:bg-slate-800 active:scale-95 transition-all duration-300 ease-in-out"
             >
               visit component
