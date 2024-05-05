@@ -2,7 +2,7 @@ import React from 'react';
 
 interface Props {}
 
-function Auth1_text(props: Props) {
+function Authentication1_text(props: Props) {
     const {} = props;
 
     const code = `
@@ -214,4 +214,4 @@ export default Page;
     );
 }
 
-export default Auth1_text;
+export default Authentication1_text;

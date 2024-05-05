@@ -3,7 +3,7 @@ import React from 'react'
 
 interface Props {}
 
-function Auth1(props: Props) {
+function Authentication1(props: Props) {
     const {} = props
 
     return (
@@ -13,4 +13,4 @@ function Auth1(props: Props) {
     )
 }
 
-export default Auth1
+export default Authentication1
