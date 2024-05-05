@@ -18,6 +18,12 @@ import Button3 from "@/componentLibrary/Buttons/Button3/Button3";
 import Button3_text from "@/componentLibrary/Buttons/Button3/Button3_text";
 import Input1 from "@/componentLibrary/Inputs/Input1/Input1";
 import Input1_text from "@/componentLibrary/Inputs/Input1/Input1_text";
+import Input2 from "@/componentLibrary/Inputs/Input2/Input2";
+import Input2_text from "@/componentLibrary/Inputs/Input2/Input2_text";
+import Input3 from "@/componentLibrary/Inputs/Input3/Input3";
+import Input3_text from "@/componentLibrary/Inputs/Input3/Input3_text";
+import Auth1 from "@/componentLibrary/Authentication/Auth1/Auth1";
+import Auth1_text from "@/componentLibrary/Authentication/Auth1/Auth1_text";
 
 function ComponentLayout({
   componentHeading,
@@ -68,7 +74,7 @@ function ComponentLayout({
 }
 
 const PreviewComponentLayout = ({ componentProp }: { componentProp: JSX.Element }) => (
-  <div className="w-full border-2 border-slate-300 rounded-md flex justify-center items-center px-5 py-12">
+  <div className="w-full border-2 border-slate-300 rounded-md flex md:flex-row flex-col justify-center items-center px-5 py-12">
     {componentProp}
   </div>
 );
@@ -140,6 +146,26 @@ function Page({ params }: { params: { component: string } }) {
           key: "Input1",
           componentProp: <Input1 />,
           ComponentCode: <Input1_text />,
+        },
+        {
+          key: "Input2",
+          componentProp: <Input2 />,
+          ComponentCode: <Input2_text />,
+        },
+        {
+          key: "Input3",
+          componentProp: <Input3 />,
+          ComponentCode: <Input3_text />,
+        }
+      ],
+    },
+    {
+      key: "Authentication",
+      components: [
+        {
+          key: "Auth1",
+          componentProp: <Auth1 />,
+          ComponentCode: <Auth1_text />,
         },
       ],
     },
