@@ -22,8 +22,11 @@ import Input2 from "@/componentLibrary/Inputs/Input2/Input2";
 import Input2_text from "@/componentLibrary/Inputs/Input2/Input2_text";
 import Input3 from "@/componentLibrary/Inputs/Input3/Input3";
 import Input3_text from "@/componentLibrary/Inputs/Input3/Input3_text";
-import Auth1 from "@/componentLibrary/Authentication/Auth1/Auth1";
-import Auth1_text from "@/componentLibrary/Authentication/Auth1/Auth1_text";
+import Authentication1 from "@/componentLibrary/Authentication/Auth1/Authentication1";
+import Authentication1_text from "@/componentLibrary/Authentication/Auth1/Authentication1_text";
+import Authentication2 from "@/componentLibrary/Authentication/Auth2/Authentication2";
+import Authentication2_text from "@/componentLibrary/Authentication/Auth2/Authentication2_text";
+
 
 function ComponentLayout({
   componentHeading,
@@ -164,9 +167,14 @@ function Page({ params }: { params: { component: string } }) {
       components: [
         {
           key: "Auth1",
-          componentProp: <Auth1 />,
-          ComponentCode: <Auth1_text />,
+          componentProp: <Authentication1 />,
+          ComponentCode: <Authentication1_text />,
         },
+        {
+          key: "Auth2",
+          componentProp: <Authentication2 />,
+          ComponentCode: <Authentication2_text />,
+        }
       ],
     },
   ];
