@@ -1,15 +1,21 @@
 "use client";
-import Navbar1 from "@/componentLibrary/Navbars/Navbar1/Navbar1";
-import Navbar1_text from "@/componentLibrary/Navbars/Navbar1/Navbar1_text";
+import React, { useState } from "react";
 import Footer from "@/components/LandingPageComponents/footer/Footer";
 import Navbar from "@/components/navbar/Navbar";
-import React, { useState } from "react";
+import Navbar1 from "@/componentLibrary/Navbars/Navbar1/Navbar1";
+import Navbar1_text from "@/componentLibrary/Navbars/Navbar1/Navbar1_text";
 import Navbar2 from "@/componentLibrary/Navbars/Navbar2/Navbar2";
 import Navbar2_text from "@/componentLibrary/Navbars/Navbar2/Navbar2_text";
 import Navbar3 from "@/componentLibrary/Navbars/Navbar3/Navbar3";
 import Navbar3_text from "@/componentLibrary/Navbars/Navbar3/Navbar3_text";
 import Navbar4 from "@/componentLibrary/Navbars/Navbar4/Navbar4";
 import Navbar4_text from "@/componentLibrary/Navbars/Navbar4/Navbar4_text";
+import Button1 from "@/componentLibrary/Buttons/Button1/Button1";
+import Button1_text from "@/componentLibrary/Buttons/Button1/Button1_text";
+import Button2 from "@/componentLibrary/Buttons/Button2/Button2";
+import Button2_text from "@/componentLibrary/Buttons/Button2/Button2_text";
+import Button3 from "@/componentLibrary/Buttons/Button3/Button3";
+import Button3_text from "@/componentLibrary/Buttons/Button3/Button3_text";
 
 function ComponentLayout({
   componentHeading,
@@ -21,6 +27,7 @@ function ComponentLayout({
   ComponentCode: JSX.Element;
 }) {
   const [isClicked, setIsClicked] = useState(false);
+  
 
   function clickedFuncCode() {
     setIsClicked(true);
@@ -59,7 +66,7 @@ function ComponentLayout({
 }
 
 const PreviewComponentLayout = ({ componentProp }: { componentProp: JSX.Element }) => (
-  <div className="w-full border-2 border-slate-300 rounded-md flex justify-center items-center p-5 h-32">
+  <div className="w-full border-2 border-slate-300 rounded-md flex justify-center items-center px-5 py-12">
     {componentProp}
   </div>
 );
@@ -104,6 +111,26 @@ function Page({ params }: { params: { component: string } }) {
         // Add other Footer components as needed
       ],
     },
+    {
+      key: "Button",
+      components: [
+        {
+          key: "Button1",
+          componentProp: <Button1 />,
+          ComponentCode: <Button1_text />,
+        },
+        {
+          key: "Button2",
+          componentProp: <Button2 />,
+          ComponentCode: <Button2_text />,
+        },
+        {
+          key: "Button3",
+          componentProp: <Button3 />,
+          ComponentCode: <Button3_text />,
+        },
+      ],
+    }
   ];
 
   // Filter componentArray based on params.component

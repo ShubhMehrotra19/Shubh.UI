@@ -18,7 +18,7 @@ function ComponentGridCard({ componentName, imageLink }: any) {
         </Link>
         <div className="flex flex-col justify-start items-start w-full gap-3">
           <h3 className="text-black font-semibold text-xl mb-1">
-            {componentName} Component
+            {componentName} Components
           </h3>
           <Link href={`/componentsPage/${componentName}`} className="w-full">
             {" "}
