@@ -16,6 +16,8 @@ import Button2 from "@/componentLibrary/Buttons/Button2/Button2";
 import Button2_text from "@/componentLibrary/Buttons/Button2/Button2_text";
 import Button3 from "@/componentLibrary/Buttons/Button3/Button3";
 import Button3_text from "@/componentLibrary/Buttons/Button3/Button3_text";
+import Input1 from "@/componentLibrary/Inputs/Input1/Input1";
+import Input1_text from "@/componentLibrary/Inputs/Input1/Input1_text";
 
 function ComponentLayout({
   componentHeading,
@@ -130,7 +132,17 @@ function Page({ params }: { params: { component: string } }) {
           ComponentCode: <Button3_text />,
         },
       ],
-    }
+    },
+    {
+      key: "Input",
+      components: [
+        {
+          key: "Input1",
+          componentProp: <Input1 />,
+          ComponentCode: <Input1_text />,
+        },
+      ],
+    },
   ];
 
   // Filter componentArray based on params.component

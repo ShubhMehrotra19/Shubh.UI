@@ -5,7 +5,7 @@ import FooterImg from '@/public/components/Footer.png';
 import CardImg from '@/public/components/Card.png';
 import ButtonImg from '@/public/components/Button.png';
 import InputImg from '@/public/components/Input.png';
-import AuthenticationImg from '@/public/components/Authentication.png';
+import AuthenticationImg from '@/public/components/authentication.png';
 
 interface Props {}
 
