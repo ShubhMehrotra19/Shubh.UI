@@ -1,8 +1,8 @@
 "use client";
 import gsap from "gsap";
-import Image from "next/image";
 import { useEffect, useState } from "react";
-import { CiSearch } from "react-icons/ci";
+import search from "@/public/icons/search.png";
+import Image from "next/image";
 
 export default function Input1() {
   const [isClicked, setIsClicked] = useState(false);
@@ -41,20 +41,16 @@ export default function Input1() {
   }
 
   return (
-    <>
-      <div className="relative cursor-pointer flex justify-center items-center">
-        <input
-          type="search"
-          className={`search pl-[36px] rounded-full flex justify-center items-center border-2 py-2 px-5 ${
-            isClicked ? "focus" : "Search-pointer"
-          }`}
-          placeholder="Search.."
-        />
-        
-          <div className="absolute inset-0 ">
-          <CiSearch />
-            </div>
-      </div>
-    </>
+    <div className="flex justify-center items-center">
+      <Image src={search} alt="search" height={30} width={30} />
+      <input
+        type="search"
+        onClick={toggleSearchClick}
+        className={`search pl-[36px] rounded-full flex justify-center items-center border-2 py-2 px-5 ${
+          isClicked ? "focus" : "Search-pointer"
+        }`}
+        placeholder="search.."
+      />
+    </div>
   );
 }
