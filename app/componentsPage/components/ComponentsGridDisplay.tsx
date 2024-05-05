@@ -3,6 +3,9 @@ import ComponentGridCard from "./ComponentGridCard";
 import NavbarImg from '@/public/components/Navbar.png';
 import FooterImg from '@/public/components/Footer.png';
 import CardImg from '@/public/components/Card.png';
+import ButtonImg from '@/public/components/Button.png';
+import InputImg from '@/public/components/Input.png';
+import AuthenticationImg from '@/public/components/authentication.png';
 
 interface Props {}
 
@@ -23,16 +26,16 @@ function ComponentsGridDisplay(props: Props) {
       componentName: "Cards",
     },
     {
-      imageLink: NavbarImg,
-      componentName: "Signin",
+      imageLink: ButtonImg,
+      componentName: "Button",
     },
     {
-      imageLink: NavbarImg,
-      componentName: "Signup",
-    },
-    {
-      imageLink: NavbarImg,
+      imageLink: InputImg,
       componentName: "Input",
+    },
+    {
+      imageLink: AuthenticationImg,
+      componentName: "Authentication",
     }
   ];
   

@@ -1,0 +1,30 @@
+import React from "react";
+
+interface Props {}
+
+function Button1(props: Props) {
+  const {} = props;
+
+  return (
+    <div className="w-full flex justify-center items-center gap-12">
+      {/* Button 1 */}
+      <button className="px-8 py-3 w-fit border-2 border-black text-black font-semibold rounded-md hover:scale-[102%] hover:bg-black hover:text-white active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        Button
+      </button>
+      {/* Button 2 */}
+      <button className="px-5 py-2 w-fit border-2 border-black text-black font-semibold rounded-md hover:scale-[102%] hover:bg-black hover:text-white active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        Button
+      </button>
+      {/* Button 3 */}
+      <button className="px-4 py-2 w-fit text-sm border-2 border-black text-black font-semibold rounded-md hover:scale-[102%] hover:bg-black hover:text-white active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        Button
+      </button>
+      {/* Button 4 */}
+      <button className="px-3 py-1 w-fit text-sm border-2 border-black text-black font-semibold rounded-md hover:scale-[102%] hover:bg-black hover:text-white active:scale-95 cursor-pointer transition-all duration-300 ease-in-out">
+        Button
+      </button>
+    </div>
+  );
+}
+
+export default Button1;
