@@ -26,7 +26,10 @@ import Authentication1 from "@/componentLibrary/Authentication/Auth1/Authenticat
 import Authentication1_text from "@/componentLibrary/Authentication/Auth1/Authentication1_text";
 import Authentication2 from "@/componentLibrary/Authentication/Auth2/Authentication2";
 import Authentication2_text from "@/componentLibrary/Authentication/Auth2/Authentication2_text";
-
+import Card1 from "@/componentLibrary/Cards/Card1/Card1";
+import Card1_text from "@/componentLibrary/Cards/Card1/Card1_text";
+import Card2 from "@/componentLibrary/Cards/Card2/Card2";
+import Card2_text from "@/componentLibrary/Cards/Card2/Card2_text";
 
 function ComponentLayout({
   componentHeading,
@@ -119,7 +122,7 @@ function Page({ params }: { params: { component: string } }) {
     {
       key: "Footer",
       components: [
-        // Add other Footer components as needed
+        
       ],
     },
     {
@@ -177,6 +180,21 @@ function Page({ params }: { params: { component: string } }) {
         }
       ],
     },
+    {
+      key: "Cards",
+      components: [
+        {
+          key: "Card1",
+          componentProp: <Card1 />,
+          ComponentCode: <Card1_text />,
+        },
+        {
+          key: "Card2",
+          componentProp: <Card2 />,
+          ComponentCode: <Card2_text />,
+        }
+      ],
+    }
   ];
 
   // Filter componentArray based on params.component
