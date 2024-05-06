@@ -30,6 +30,8 @@ import Card1 from "@/componentLibrary/Cards/Card1/Card1";
 import Card1_text from "@/componentLibrary/Cards/Card1/Card1_text";
 import Card2 from "@/componentLibrary/Cards/Card2/Card2";
 import Card2_text from "@/componentLibrary/Cards/Card2/Card2_text";
+import Card3 from "@/componentLibrary/Cards/Card3/Card3";
+import Card3_text from "@/componentLibrary/Cards/Card3/Card3_text";
 
 function ComponentLayout({
   componentHeading,
@@ -80,7 +82,7 @@ function ComponentLayout({
 }
 
 const PreviewComponentLayout = ({ componentProp }: { componentProp: JSX.Element }) => (
-  <div className="w-full border-2 border-slate-300 rounded-md flex md:flex-row flex-col justify-center items-center px-5 py-12">
+  <div className="w-full border-2 border-slate-300 rounded-md flex justify-center items-center px-5 py-12">
     {componentProp}
   </div>
 );
@@ -192,6 +194,11 @@ function Page({ params }: { params: { component: string } }) {
           key: "Card2",
           componentProp: <Card2 />,
           ComponentCode: <Card2_text />,
+        },
+        {
+          key: "Card3",
+          componentProp: <Card3 />,
+          ComponentCode: <Card3_text />,
         }
       ],
     }
