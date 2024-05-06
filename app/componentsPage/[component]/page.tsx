@@ -32,6 +32,12 @@ import Card2 from "@/componentLibrary/Cards/Card2/Card2";
 import Card2_text from "@/componentLibrary/Cards/Card2/Card2_text";
 import Card3 from "@/componentLibrary/Cards/Card3/Card3";
 import Card3_text from "@/componentLibrary/Cards/Card3/Card3_text";
+import Footer1 from "@/componentLibrary/Footer/Footer1/Footer1";
+import Footer1_text from "@/componentLibrary/Footer/Footer1/Footer1_text";
+import Footer2 from "@/componentLibrary/Footer/Footer2/Footer2";
+import Footer2_text from "@/componentLibrary/Footer/Footer2/Footer2_text";
+import Footer3 from "@/componentLibrary/Footer/Footer3/Footer3";
+import Footer3_text from "@/componentLibrary/Footer/Footer3/Footer3_text";
 
 function ComponentLayout({
   componentHeading,
@@ -201,6 +207,26 @@ function Page({ params }: { params: { component: string } }) {
           ComponentCode: <Card3_text />,
         }
       ],
+    },
+    {
+      key: "Footer",
+      components: [
+        {
+          key: "Footer1",
+          componentProp: <Footer1 />,
+          ComponentCode: <Footer1_text />,
+        },
+        {
+          key: "Footer2",
+          componentProp: <Footer2 />,
+          ComponentCode: <Footer2_text />,
+        },
+        {
+          key: "Footer3",
+          componentProp: <Footer3 />,
+          ComponentCode: <Footer3_text />,
+        }
+      ]
     }
   ];
 
