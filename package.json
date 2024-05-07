@@ -9,11 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.3.3",
     "@studio-freight/lenis": "^1.0.42",
     "gsap": "^3.12.5",
     "ldrs": "^1.0.1",
     "lenis": "^1.0.45",
     "lucide-react": "^0.378.0",
+    "mongodb": "^6.6.0",
+    "mongoose": "^8.3.3",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
