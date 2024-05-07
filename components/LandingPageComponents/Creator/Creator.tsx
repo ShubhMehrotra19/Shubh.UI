@@ -8,6 +8,11 @@ function Creator(props: Props) {
   const {} = props;
 
   const form = useRef<HTMLFormElement>(null);
+  const [isClicked, setIsClicked] = React.useState(false);
+
+  function handleClick() {
+    setIsClicked(true);
+  }
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -62,11 +67,11 @@ function Creator(props: Props) {
           name="user_email"
           className="input border-2 border-slate-300 rounded-full py-2 md:pl-3 pl-1 md:pr-12 pr-5"
         />
-        <button
-          className="rounded-full w-fit md:text-base text-sm md:px-5 px-3 py-2 bg-black text-white font-medium hover:scale-[102%] active:scale-95 transition duration-300 ease-in-out"
+        <button onClick={handleClick}
+          className={`rounded-full w-fit md:text-base text-sm md:px-5 px-3 py-2 bg-black text-white font-medium hover:scale-[102%] active:scale-95 transition duration-300 ease-in-out ${isClicked ? "bg-green-700" : "bg-black"}`}
           type="submit"
         >
-          Submit
+          {isClicked ? "Sent! 🤍" : "Send"}
         </button>
       </form>
     </div>
